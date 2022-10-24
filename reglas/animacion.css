@@ -1,0 +1,51 @@
+.fantasma1,
+.fantasma2,
+.fantasma3,
+.fantasma4{
+    width: 150px;
+    position: relative;
+    /*animation: mover 4s ease;*/
+    display: block;
+    animation: carrera 4s ease;
+}
+.fantasma2{
+   filter: invert(1);
+   animation: carrera 4s ease-in;
+}
+.fantasma3{
+filter: sepia(1);
+animation: carrera 4s ease-out;
+}
+.fantasma4{
+   filter: brightness(0.5);
+   animation: carrera 4s ease-in-out;
+}
+@keyframes carrera{
+    0%{
+        top: 0; left: 0;
+    }
+    100%{
+        top:0; left:1000px;
+    }
+}
+
+
+/*
+@keyframes mover{
+    0%{
+        top:0; left:0;
+    }
+    25%{
+        top:0; left: 500px;
+    }
+    50%{
+        top:500px; left:0;
+    }
+    75%{
+        top:500px; left: 500px;
+    }
+    100%{
+        top:0; left:0;
+    }
+}
+*/
